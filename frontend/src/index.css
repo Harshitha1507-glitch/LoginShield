@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 14px;
+  font-feature-settings: 'ss01' on;
+
+  --wine: #4a0e25;
+  --burgundy: #800020;
+  --berry: #a63a62;
+  --blush: #f4c9d3;
+  --ivory: #fbf6ec;
+
+  --bg: var(--ivory);
+  --sidebar: var(--wine);
+  --card: var(--blush);
+  --card-raised: color-mix(in srgb, var(--blush) 58%, var(--ivory));
+  --border: color-mix(in srgb, var(--berry) 30%, var(--ivory));
+  --border-strong: color-mix(in srgb, var(--berry) 50%, var(--ivory));
+  --text: var(--wine);
+  --muted: color-mix(in srgb, var(--wine) 68%, var(--ivory));
+  --subtle: color-mix(in srgb, var(--wine) 52%, var(--ivory));
+  --blue: var(--berry);
+  --violet: var(--berry);
+  --ink: var(--wine);
+  --surface: var(--blush);
+  --outline: var(--border);
+  --secondary-ink: var(--muted);
+  --plum: var(--burgundy);
+  --plum-hover: var(--berry);
+  --sage: var(--wine);
+  --cloud: var(--blush);
+  --rose: var(--berry);
+  --butter: var(--blush);
+  --active-lavender: var(--blush);
+  --green: #16845b;
+  --amber: #a96b00;
+  --red: #bf344a;
+}
+
+* { box-sizing: border-box; }
+body { min-width: 360px; min-height: 100vh; margin: 0; color: var(--wine); background: var(--ivory); }
+button, input, select { font: inherit; }
+button { color: inherit; cursor: pointer; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--berry); outline-offset: 2px; }
+::selection { color: var(--wine); background: color-mix(in srgb, var(--blush) 78%, var(--berry)); }
+
+#root { min-height: 100vh; }
